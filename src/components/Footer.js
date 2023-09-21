@@ -5,7 +5,7 @@ function Footer() {
   const current = new Date();
   const date = `${current.getFullYear()}`;
   return (
-    <div className="footer-div">
+    <div className="container" id="footer-container">
       this is a footer
       <p>© 2022-{date}</p>
     </div>

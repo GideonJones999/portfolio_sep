@@ -15,7 +15,7 @@ function AboutMe() {
   }
 
   return (
-    <div className="aboutMe-div">
+    <div className="container">
       <div className="aboutText">
         <h4>
           Hey! I'm Gideon Jones. I'm {currentAge} years old, and I'm a Software

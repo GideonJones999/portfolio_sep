@@ -1,5 +1,32 @@
 @use "./Common.scss";
+$logoSize: 8em;
 
-.header-div {
-  padding: 10px;
+.container {
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  #Site-Logo {
+    #logo {
+      height: $logoSize;
+      width: $logoSize;
+      transition: 0.5s;
+      &:hover {
+        height: ($logoSize * 1.05);
+        width: ($logoSize * 1.05);
+        transition: 0.5s;
+      }
+    }
+  }
+  #other-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    * {
+      padding-left: 1em;
+    }
+  }
 }
