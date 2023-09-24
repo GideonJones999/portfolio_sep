@@ -1,6 +1,8 @@
 @use "./Common.scss";
 
-.container #footer-container {
-  padding: 5px;
-  color: Common.$blue;
+#footer-container {
+  padding: 1em;
+  border-top: solid Common.$gold 1px;
+  margin: 1.5em;
+  margin-top: 3em;
 }

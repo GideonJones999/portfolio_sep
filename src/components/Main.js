@@ -16,16 +16,19 @@ function Main() {
               <li>
                 <a href="mailto:gideon.w.jones@gmail.com">
                   <Icon.Mail />
+                  <p className="descriptionText">E-mail</p>
                 </a>
               </li>
-              <li>
+              <li id="personal-github">
                 <a target="_blank" href="https://github.com/GideonJones999">
                   <Icon.GitHub />
+                  <p className="descriptionText">Personal</p>
                 </a>
               </li>
-              <li>
+              <li id="school-github">
                 <a target="_blank" href="https://github.com/GideonJonesMTECH">
-                  <Icon.GitHub /> (MTECH)
+                  <Icon.GitHub />
+                  <p className="descriptionText">MTECH</p>
                 </a>
               </li>
               <li>
@@ -34,6 +37,7 @@ function Main() {
                   href="https://www.linkedin.com/in/gideon-jones-9173081b2/"
                 >
                   <Icon.Linkedin />
+                  <p className="descriptionText">LinkedIn</p>
                 </a>
               </li>
               <li>
@@ -42,6 +46,7 @@ function Main() {
                   href="https://www.facebook.com/gideonjones2003/"
                 >
                   <Icon.Facebook />
+                  <p className="descriptionText">Facebook</p>
                 </a>
               </li>
               <li>
@@ -50,6 +55,7 @@ function Main() {
                   href="https://www.instagram.com/gideonjones2003/"
                 >
                   <Icon.Instagram />
+                  <p className="descriptionText">Instagram</p>
                 </a>
               </li>
             </ul>

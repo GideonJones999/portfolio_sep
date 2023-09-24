@@ -1,4 +1,5 @@
 @use "./Common.scss";
+$link-size: 24px;
 
 #main-content {
   display: flex;
@@ -17,16 +18,40 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 1em;
     li {
       padding: 1em;
-      border: 1px dotted black;
+      size: $link-size;
       a {
-        color: black;
-        transition: 0.5s;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         &:hover {
-          color: Common.$gold;
           transition: 0.5s;
+          svg {
+            color: Common.$gold;
+            background: black;
+          }
+          p {
+            opacity: 1;
+          }
+        }
+        svg {
+          height: $link-size * 1.5;
+          width: $link-size * 1.5;
+          padding: 0.5em;
+          color: black;
+          transition: 0.5s;
+          background: Common.$gold;
+          border-radius: 1em;
+        }
+        p {
+          color: black;
+          opacity: 0.75;
+          size: $link-size * 0.75;
         }
       }
     }

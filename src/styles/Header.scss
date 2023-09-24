@@ -1,9 +1,13 @@
 @use "./Common.scss";
 $logoSize: 8em;
 
-.container {
-  padding: 1em;
-  margin: 1em;
+#header-container {
+  background-image: url("../../public/photos/header-bkgnd.jpg");
+  background-size: cover;
+  padding: 1.5em;
+  margin-bottom: 3em;
+  height: 8em;
+  border-bottom: 3px Common.$gold solid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -21,12 +25,64 @@ $logoSize: 8em;
       }
     }
   }
-  #other-links {
+  #other-links-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    * {
-      padding-left: 1em;
+    #toggleMenuOpenButton {
+      display: none;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      li {
+        padding-left: 1em;
+        a {
+          text-decoration: none;
+          font-size: 1.17em;
+          font-weight: bold;
+          color: Common.$gold;
+          transition: 0.5s;
+          &:hover {
+            transition: 0.5s;
+            color: black;
+            text-decoration: solid black 1px;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+  @media all and (max-width: 730px) {
+    & {
+      height: fit-content;
+    }
+    #other-links-container {
+      flex-direction: column;
+      #toggleMenuOpenButton {
+        border: none;
+        background-color: transparent;
+        color: Common.$gold;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .other-links {
+        ul {
+          display: none;
+          flex-direction: column;
+          transition: ease-in-out 0.5s;
+        }
+      }
+      .other-links.expanded {
+        ul {
+          display: flex;
+          transition: ease-in-out 0.5s;
+        }
+      }
     }
   }
 }
