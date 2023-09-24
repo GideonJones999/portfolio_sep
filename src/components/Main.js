@@ -10,7 +10,7 @@ function Main() {
       <div>
         <h1> Welcome to my portfolio! </h1>
         <div id="main-content">
-          <img src="logo192.png" />
+          <img src="photos/ProfilePic.jpg" />
           <div>
             <ul>
               <li>

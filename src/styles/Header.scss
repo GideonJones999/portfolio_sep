@@ -13,26 +13,29 @@ $logoSize: 8em;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
-  #Site-Logo {
-    #logo {
-      height: $logoSize;
-      width: $logoSize;
-      transition: 0.5s;
-      &:hover {
-        height: ($logoSize * 1.05);
-        width: ($logoSize * 1.05);
+  #layer1 {
+    #Site-Logo {
+      #logo {
+        height: $logoSize;
+        width: $logoSize;
         transition: 0.5s;
+        &:hover {
+          height: ($logoSize * 1.05);
+          width: ($logoSize * 1.05);
+          transition: 0.5s;
+        }
       }
     }
+    #toggleMenuOpenButton {
+      display: none;
+    }
   }
-  #other-links-container {
+
+  .other-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    #toggleMenuOpenButton {
-      display: none;
-    }
     ul {
       display: flex;
       flex-direction: row;
@@ -58,9 +61,13 @@ $logoSize: 8em;
   @media all and (max-width: 730px) {
     & {
       height: fit-content;
-    }
-    #other-links-container {
       flex-direction: column;
+    }
+    #layer1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
       #toggleMenuOpenButton {
         border: none;
         background-color: transparent;
@@ -69,18 +76,34 @@ $logoSize: 8em;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
-      }
-      .other-links {
-        ul {
-          display: none;
-          flex-direction: column;
-          transition: ease-in-out 0.5s;
+        display: block;
+        size: 1.17em;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          color: black;
+          size: 1.2em;
+          transition: 0.5s ease-in-out;
         }
       }
-      .other-links.expanded {
-        ul {
-          display: flex;
+    }
+    .other-links {
+      ul {
+        display: none;
+        flex-direction: column;
+        transition: ease-in-out 0.5s;
+      }
+    }
+    .other-links.expanded {
+      ul {
+        display: flex;
+        transition: ease-in-out 0.5s;
+        width: 100%;
+        li {
           transition: ease-in-out 0.5s;
+          &:hover {
+            transition: ease-in-out 0.5s;
+            background-color: rgba(255, 255, 255, 0.5);
+          }
         }
       }
     }

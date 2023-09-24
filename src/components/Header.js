@@ -8,42 +8,41 @@ export default function Header() {
 
   return (
     <div id="header-container">
-      <Link id="Site-Logo" to="/">
-        {" "}
-        <img id="logo" src="PortLogo.png" alt="Gideon's Logo" />
-      </Link>
-      <div id="other-links-container">
+      <div id="layer1">
+        <Link id="Site-Logo" to="/">
+          {" "}
+          <img id="logo" src="PortLogo.png" alt="Gideon's Logo" />
+        </Link>
         <button
           id="toggleMenuOpenButton"
           onClick={() => setIsNavExpanded(!isNavExpanded)}
         >
           <Icon.Menu />
         </button>
-
-        <div className={isNavExpanded ? "other-links" : "other-links expanded"}>
-          <ul>
-            <li>
-              <Link to="about">
-                <h3>About Me</h3>
-              </Link>
-            </li>
-            <li>
-              <a>
-                <h3>Past Portfolios</h3>
-              </a>
-            </li>
-            <li>
-              <a>
-                <h3>Contact Me</h3>
-              </a>
-            </li>
-            <li>
-              <a>
-                <h3>Other</h3>
-              </a>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div className={isNavExpanded ? "other-links" : "other-links expanded"}>
+        <ul>
+          <li>
+            <Link to="about">
+              <h3>About Me</h3>
+            </Link>
+          </li>
+          <li>
+            <Link to="old-portfolios">
+              <h3>Past Portfolios</h3>
+            </Link>
+          </li>
+          <li>
+            <Link to="contact-me">
+              <h3>Contact Me</h3>
+            </Link>
+          </li>
+          <li>
+            <a>
+              <h3>Other</h3>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

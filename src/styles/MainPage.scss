@@ -11,6 +11,18 @@ $link-size: 24px;
   img {
     width: 15em;
     height: 15em;
+    border-radius: 5em;
+    object-fit: cover;
+    object-position: -20px;
+    transition: ease-in-out 0.5s;
+    border: 2px solid black;
+    &:hover {
+      width: 16em;
+      height: 16em;
+      transition: ease-in-out 0.5s;
+      border: 5px solid Common.$gold;
+      border-radius: 2em;
+    }
   }
   ul {
     list-style: none;
