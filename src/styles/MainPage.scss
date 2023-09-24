@@ -1,69 +1,78 @@
 @use "./Common.scss";
 $link-size: 24px;
 
-#main-content {
+.app-container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 1em;
-  margin: 1em;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  img {
-    width: 15em;
-    height: 15em;
-    border-radius: 5em;
-    object-fit: cover;
-    object-position: -20px;
-    transition: ease-in-out 0.5s;
-    border: 2px solid black;
-    &:hover {
-      width: 16em;
-      height: 16em;
-      transition: ease-in-out 0.5s;
-      border: 5px solid Common.$gold;
-      border-radius: 2em;
-    }
-  }
-  ul {
-    list-style: none;
+  #main-content {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    padding: 1em;
+    margin: 1em;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-    li {
+    background-color: rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    border-radius: 2em;
+    img {
+      width: 15em;
+      height: 15em;
+      border-radius: 5em;
+      object-fit: cover;
+      object-position: -20px;
+      transition: ease-in-out 0.5s;
+      border: 2px solid black;
+      &:hover {
+        width: 16em;
+        height: 16em;
+        transition: ease-in-out 0.5s;
+        border: 5px solid Common.$gold;
+        border-radius: 2em;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       padding: 1em;
-      size: $link-size;
-      a {
-        text-decoration: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        &:hover {
-          transition: 0.5s;
+      li {
+        padding: 1em;
+        size: $link-size;
+        a {
+          text-decoration: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            transition: 0.5s;
+            svg {
+              color: Common.$gold;
+              background: black;
+            }
+            p {
+              opacity: 1;
+            }
+          }
           svg {
-            color: Common.$gold;
-            background: black;
+            height: $link-size * 1.5;
+            width: $link-size * 1.5;
+            padding: 0.5em;
+            color: black;
+            transition: 0.5s;
+            background: Common.$gold;
+            border-radius: 1em;
           }
           p {
-            opacity: 1;
+            color: black;
+            opacity: 0.75;
+            size: $link-size * 0.75;
           }
-        }
-        svg {
-          height: $link-size * 1.5;
-          width: $link-size * 1.5;
-          padding: 0.5em;
-          color: black;
-          transition: 0.5s;
-          background: Common.$gold;
-          border-radius: 1em;
-        }
-        p {
-          color: black;
-          opacity: 0.75;
-          size: $link-size * 0.75;
         }
       }
     }

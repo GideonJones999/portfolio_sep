@@ -33,8 +33,8 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="contact-me">
-              <h3>Contact Me</h3>
+            <Link to="projects">
+              <h3>Projects</h3>
             </Link>
           </li>
           <li>

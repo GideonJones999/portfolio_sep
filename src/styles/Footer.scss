@@ -3,6 +3,23 @@
 #footer-container {
   padding: 1em;
   border-top: solid Common.$gold 1px;
-  margin: 1.5em;
-  margin-top: 3em;
+  margin: 3em -1.5em 0.5em;
+  flex: 1;
+  max-width: 100%;
+  button {
+    border: none;
+    background-color: transparent;
+    color: Common.$gold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+    &:hover {
+      transition: ease-in-out 0.5s;
+      color: black;
+      text-decoration: solid black 1px;
+      letter-spacing: 0.5px;
+    }
+  }
 }

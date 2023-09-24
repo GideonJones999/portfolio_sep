@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/ContactMe.scss";
+import "../styles/Projects.scss";
 import * as Icon from "react-feather";
 
-export default function ContactMe() {
+export default function Projects() {
   return (
-    <div>
+    <div id="contact-container">
       <h3>Contact Me</h3>
     </div>
   );

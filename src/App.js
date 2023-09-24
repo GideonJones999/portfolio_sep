@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Main from "./components/Main.js";
 import AboutMe from "./components/AboutMe";
 import OldPortfolios from "./components/OldPortfolios";
-import ContactMe from "./components/ContactMe";
+import Projects from "./components/Projects";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Main />} />
         <Route path="about" element={<AboutMe />} />
         <Route path="old-portfolios" element={<OldPortfolios />} />
-        <Route path="contact-me" element={<ContactMe />} />
+        <Route path="projects" element={<Projects />} />
       </Routes>
       <Footer />
     </div>

@@ -1,1 +1,39 @@
 @use "./Common.scss";
+
+div {
+  display: flex;
+  flex-direction: column;
+  .portfolio-container {
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    margin: 1em;
+    iframe {
+      width: 25em;
+      height: auto;
+      zoom: 2;
+      margin: -3em;
+      overflow: hidden;
+      -moz-transform: scale(0.5);
+      -o-transform: scale(0.5);
+      -webkit-transform: scale(0.5);
+    }
+    div {
+      span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: fit-content;
+        a {
+          color: Common.$gold;
+          padding: 1em;
+        }
+      }
+      p {
+        size: 12px;
+      }
+    }
+  }
+}

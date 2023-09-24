@@ -13,6 +13,7 @@ $logoSize: 8em;
   flex-wrap: wrap;
   align-content: center;
   justify-content: space-between;
+  max-width: 100%;
   #layer1 {
     #Site-Logo {
       #logo {
@@ -76,7 +77,6 @@ $logoSize: 8em;
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
-        display: block;
         size: 1.17em;
         transition: 0.5s ease-in-out;
         &:hover {
