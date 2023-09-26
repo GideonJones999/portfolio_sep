@@ -23,6 +23,11 @@ export default function Header() {
       <div className={isNavExpanded ? "other-links" : "other-links expanded"}>
         <ul>
           <li>
+            <Link to="/">
+              <h3>Home</h3>
+            </Link>
+          </li>
+          <li>
             <Link to="about">
               <h3>About Me</h3>
             </Link>
@@ -36,11 +41,6 @@ export default function Header() {
             <Link to="projects">
               <h3>Projects</h3>
             </Link>
-          </li>
-          <li>
-            <a>
-              <h3>Other</h3>
-            </a>
           </li>
         </ul>
       </div>

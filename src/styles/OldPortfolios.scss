@@ -12,12 +12,17 @@ div {
     iframe {
       width: 25em;
       height: auto;
-      zoom: 2;
       margin: -3em;
+      zoom: 2;
       overflow: hidden;
       -moz-transform: scale(0.5);
       -o-transform: scale(0.5);
       -webkit-transform: scale(0.5);
+    }
+    img {
+      height: 300px;
+      width: auto;
+      margin: 1em 3.5em;
     }
     div {
       span {
@@ -29,6 +34,13 @@ div {
         a {
           color: Common.$gold;
           padding: 1em;
+          text-decoration: none;
+          transition: 0.5s ease-in-out;
+          &:hover {
+            color: black;
+            letter-spacing: 1px;
+            transition: 0.5s ease-in-out;
+          }
         }
       }
       p {

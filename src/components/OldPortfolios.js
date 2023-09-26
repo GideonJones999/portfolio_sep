@@ -5,7 +5,7 @@ import * as Icon from "react-feather";
 export default function OldPortfolios() {
   return (
     <div>
-      <h3>Old Portfolios</h3>
+      <h2>Old Portfolios</h2>
       <div className="portfolio-container">
         <iframe
           src="https://gideonjonesmtech.github.io/PortfolioV.0/"
@@ -73,7 +73,7 @@ export default function OldPortfolios() {
               href="https://gideonjonesmtech.github.io/PortfolioV.2/"
               target="_blank"
             >
-              <h3>Portfolio 2</h3>
+              <h3>Portfolio 3</h3>
             </a>
             <a
               href="https://github.com/GideonJonesMTECH/PortfolioV.2"

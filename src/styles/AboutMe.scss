@@ -3,4 +3,9 @@
 .container {
   padding: 5px;
   flex-grow: 1;
+  // max-width: 40%;
+  align-items: center;
+  .aboutText {
+    max-width: 40%;
+  }
 }
