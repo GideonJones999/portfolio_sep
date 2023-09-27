@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button.js";
 import "../styles/Common.scss";
 import "../styles/MainPage.scss";
 import * as Icon from "react-feather";
@@ -42,28 +41,10 @@ function Main() {
               </li>
               <li>
                 <a href="Resume - 26.09.23.pdf" target="_blank">
-                  <Icon.File />
+                  <Icon.FileText />
                   <p className="descriptionText">Resume</p>
                 </a>
               </li>
-              {/* <li>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/gideonjones2003/"
-              >
-                <Icon.Facebook />
-                <p className="descriptionText">Facebook</p>
-              </a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/gideonjones2003/"
-              >
-                <Icon.Instagram />
-                <p className="descriptionText">Instagram</p>
-              </a>
-            </li> */}
             </ul>
           </div>
         </div>
