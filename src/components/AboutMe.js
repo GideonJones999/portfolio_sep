@@ -15,7 +15,7 @@ function AboutMe() {
   }
 
   return (
-    <div className="container">
+    <div id="about-container">
       <div className="aboutText">
         <h4>
           Hey! I'm Gideon Jones. I'm {currentAge} years old, and I'm a Software
@@ -23,13 +23,14 @@ function AboutMe() {
         </h4>
         <p>
           I am currently studying at{" "}
-          <a href="https://www.byu.edu/" target="_blank">
+          <a href="https://www.byu.edu/" target="_blank" rel="noreferrer">
             BYU Provo
           </a>{" "}
           majoring in{" "}
           <a
             href="https://cs.byu.edu/education/undergraduate/programs/software-engineering/"
             target="_blank"
+            rel="noreferrer"
           >
             Software Development
           </a>
@@ -42,6 +43,7 @@ function AboutMe() {
           <a
             href="https://mtec.edu/programs/web-programming-development/"
             target="_blank"
+            rel="noreferrer"
           >
             Mountainland Technical College
           </a>
@@ -51,13 +53,17 @@ function AboutMe() {
         </p>{" "}
         <p>
           As a part of my MTECH experience, I had an externship with{" "}
-          <a href="https://www.3octaves.com/" target="_blank">
+          <a href="https://www.3octaves.com/" target="_blank" rel="noreferrer">
             Three Octaves
           </a>{" "}
           where I worked on several projects, including using React in the
           Front-end, Go in the Back-end, and Testing to make sure it was all
           working correctly.{" "}
-          <a href="https://www.linkedin.com/in/jason-baddley/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/jason-baddley/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Jason Baddley
           </a>{" "}
           was my supervisor.
@@ -77,7 +83,7 @@ function AboutMe() {
         </p>
         <p>
           I've participated in{" "}
-          <a href="https://nanowrimo.org/" target="_blank">
+          <a href="https://nanowrimo.org/" target="_blank" rel="noreferrer">
             NaNoWriMo
           </a>{" "}
           (National Novel Writing Month) twice, and I finished it the second

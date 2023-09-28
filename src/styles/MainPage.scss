@@ -9,8 +9,11 @@ $link-size: 24px;
   .all-content {
     max-width: 75%;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     #main-content {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       padding: 1em;
       margin: 1em;

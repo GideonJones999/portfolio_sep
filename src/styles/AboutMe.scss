@@ -1,10 +1,10 @@
 @use "./Common.scss";
 
-.container {
+#about-container {
   padding: 5px;
-  flex-grow: 1;
-  // max-width: 40%;
+  display: flex;
   align-items: center;
+  justify-content: center;
   .aboutText {
     max-width: 40%;
   }

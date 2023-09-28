@@ -9,12 +9,13 @@ function Main() {
       <div className="all-content">
         <h1> Gideon Jones </h1>
         <div id="main-content">
-          <img src="photos/ProfilePic.jpg" />
+          <img src="portfolio_sep/photos/ProfilePic.jpg" />
           <div>
             <ul>
               <li>
                 <a
                   target="_blank"
+                  rel="noreferrer"
                   href="https://www.linkedin.com/in/gideon-jones-9173081b2/"
                 >
                   <Icon.Linkedin />
@@ -28,19 +29,31 @@ function Main() {
                 </a>
               </li>
               <li id="personal-github">
-                <a target="_blank" href="https://github.com/GideonJones999">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/GideonJones999"
+                >
                   <Icon.GitHub />
                   <p className="descriptionText">Personal</p>
                 </a>
               </li>
               <li id="school-github">
-                <a target="_blank" href="https://github.com/GideonJonesMTECH">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://github.com/GideonJonesMTECH"
+                >
                   <Icon.GitHub />
                   <p className="descriptionText">MTECH</p>
                 </a>
               </li>
               <li>
-                <a href="Resume - 26.09.23.pdf" target="_blank">
+                <a
+                  href="portfolio_sep/Resume-26-09-23.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon.FileText />
                   <p className="descriptionText">Resume</p>
                 </a>
