@@ -54,8 +54,10 @@
         a {
           color: Common.$teal;
           text-decoration: none;
+          transition: 0.5s ease-in-out;
           &:hover {
             color: Common.$gold;
+            transition: 0.5s ease-in-out;
           }
         }
       }
