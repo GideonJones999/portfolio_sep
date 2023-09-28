@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import * as Icon from "react-feather";
 
 export default function Header() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded = false, setIsNavExpanded] = useState(false);
 
   return (
     <div id="header-container">
