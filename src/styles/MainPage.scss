@@ -84,5 +84,14 @@ $link-size: 24px;
         }
       }
     }
+    p {
+      a {
+        color: Common.$teal;
+        text-decoration: none;
+        &:hover {
+          color: Common.$gold;
+        }
+      }
+    }
   }
 }

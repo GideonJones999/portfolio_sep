@@ -9,7 +9,7 @@ function Main() {
       <div className="all-content">
         <h1> Gideon Jones </h1>
         <div id="main-content">
-          <img src="/photos/ProfilePic.jpg" alt="Gideon's Profile Picture"/>
+          <img src="photos/ProfilePic.jpg" alt="Gideon's Profile Picture" />
           <div>
             <ul>
               <li>
@@ -49,11 +49,7 @@ function Main() {
                 </a>
               </li>
               <li>
-                <a
-                  href="portfolio_sep/Resume-26-09-23.pdf"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="Resume-26-09-23.pdf" target="_blank" rel="noreferrer">
                   <Icon.FileText />
                   <p className="descriptionText">Resume</p>
                 </a>
@@ -69,7 +65,15 @@ function Main() {
             {" "}
             gideon.w.jones@gmail.com
           </a>
-          .
+          . This is my newest{" "}
+          <a
+            href="https://github.com/GideonJones999/portfolio_sep"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Portfolio
+          </a>
+          , made in September of 2023 using React.
         </p>
       </div>
     </div>
