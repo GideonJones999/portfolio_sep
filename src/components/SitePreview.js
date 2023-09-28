@@ -7,7 +7,7 @@ export class SitePreview extends Component {
       <div className="portfolio-container">
         {this.props.img ? (
           <img
-            src={`portfolio_sep/photos/${this.props.img}`}
+            src={`/photos/${this.props.img}`}
             alt={this.props.title}
           />
         ) : (

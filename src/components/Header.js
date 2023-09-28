@@ -11,7 +11,7 @@ export default function Header() {
       <div id="layer1">
         <Link id="Site-Logo" to="/">
           {" "}
-          <img id="logo" src="portfolio_sep/PortLogo.png" alt="Gideon's Logo" />
+          <img id="logo" src="PortLogo.png" alt="Gideon's Logo" />
         </Link>
         <button
           id="toggleMenuOpenButton"

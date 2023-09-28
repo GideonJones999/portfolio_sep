@@ -9,7 +9,7 @@ function Main() {
       <div className="all-content">
         <h1> Gideon Jones </h1>
         <div id="main-content">
-          <img src="portfolio_sep/photos/ProfilePic.jpg" />
+          <img src="/photos/ProfilePic.jpg" alt="Gideon's Profile Picture"/>
           <div>
             <ul>
               <li>

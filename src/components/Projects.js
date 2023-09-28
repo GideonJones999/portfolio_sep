@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/OldPortfolios.scss";
-import * as Icon from "react-feather";
 import { SitePreview } from "./SitePreview";
 
 export default function Projects() {

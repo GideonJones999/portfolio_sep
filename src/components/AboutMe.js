@@ -8,7 +8,7 @@ function AboutMe() {
   const getCurrentDay = `${current.getDate()}`;
 
   let currentAge = 0;
-  if ((getCurrentMonth == 4 && getCurrentDay >= 19) || getCurrentMonth > 4) {
+  if ((getCurrentMonth === 4 && getCurrentDay >= 19) || getCurrentMonth > 4) {
     currentAge = getCurrentYear - 2003;
   } else {
     currentAge = getCurrentYear - 2004;
