@@ -17,13 +17,13 @@
           transition: ease-in-out 0.5s;
         }
       }
-      @media all and (max-width: 730px) {
-        & {
-          max-width: 80%;
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-        }
+    }
+    @media all and (max-width: 730px) {
+      & {
+        max-width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
     }
   }
