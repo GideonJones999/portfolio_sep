@@ -88,8 +88,10 @@ $link-size: 24px;
       a {
         color: Common.$teal;
         text-decoration: none;
+        transition: ease-in-out 0.5s;
         &:hover {
           color: Common.$gold;
+          transition: ease-in-out 0.5s;
         }
       }
     }
