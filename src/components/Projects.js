@@ -7,6 +7,12 @@ export default function Projects() {
     <div className="Projects-Container">
       <h2>Projects</h2>
       <SitePreview
+        title="What to Watch"
+        site="https://startup.moviepick.click/"
+        gitLink="https://github.com/GideonJones999/WhatToWatch/tree/react-branch"
+        description={"A Project made for my CS 260 class at BYU, using React, Mongo DB, and is hosted on AWS. You manke an account, and then tell the service what movies you've seen recently, and your streeming services. The site then recommends a new movie for you to watch. Will return to the project in the coming future."}
+      />    
+      <SitePreview
         title="Pokémon Match"
         site="https://pokemonmatching.web.app/"
         gitLink="https://github.com/GideonJonesMTECH/GroupAngularPokemon"
